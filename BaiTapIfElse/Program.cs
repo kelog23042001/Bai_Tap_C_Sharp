@@ -77,7 +77,9 @@ namespace BaiTapSo1
                     Double canhb232 = Double.Parse(Console.ReadLine());
                     Console.Write("Nhap canh 3: ");
                     Double canhc232 = Double.Parse(Console.ReadLine());
-                    if (canha232 + canhb232 > canhc232 && canha232 + canhc232 > canhb232 && canhb232 + canhc232 > canha232)
+                    if (canha232 + canhb232 > canhc232 && 
+                        canha232 + canhc232 > canhb232 && 
+                        canhb232 + canhc232 > canha232)
                         Console.WriteLine("3 canh tam giac");
                     else
                         Console.WriteLine("Khong phai 3 canh tam giac");
