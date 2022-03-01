@@ -6,7 +6,7 @@ namespace BaiTapSo1
     {
         static void Main(string[] args)
         {
-            int so;
+        int so232;
         Ifinity_Loop:
             Console.WriteLine("        ====================BAI TAP====================");
             Console.WriteLine("Bai 1: Nhap vao mot so nguyen, in ra ket qua la so am hay so duong");
@@ -15,8 +15,8 @@ namespace BaiTapSo1
             Console.WriteLine("Bai 4: Nhap 3 so thuc, kiem tra co phai 3 canh cua tam giac vuong khong");
             Console.WriteLine("Chon 0 de thoat!!");
             Console.Write("Chon bai: ");
-            int bai = Int32.Parse(Console.ReadLine());
-            switch (bai)
+            int bai232 = Int32.Parse(Console.ReadLine());
+            switch (bai232)
             {
                 case 0:
                         break;
@@ -24,15 +24,15 @@ namespace BaiTapSo1
                     Console.Clear();
                     #region
                     Console.Write("Nhap mot so: ");
-                    string strSo = Console.ReadLine();
-                    if (int.TryParse(strSo, out so) == false)
+                    string strSo232 = Console.ReadLine();
+                    if (int.TryParse(strSo232, out so232) == false)
                         Console.WriteLine("Du lieu nhap sai");
                     else
                     {
-                        if (so >= 0)
-                            Console.WriteLine("So {0} la so duong", so);
+                        if (so232 >= 0)
+                            Console.WriteLine("So {0} la so duong", so232);
                         else
-                            Console.WriteLine("So {0} la so am", so);
+                            Console.WriteLine("So {0} la so am", so232);
                     }
                     #endregion
                     goto Ifinity_Loop;
@@ -42,28 +42,28 @@ namespace BaiTapSo1
                     Console.Clear();
                     #region
                     Console.Write("Nhap so: ");
-                    int num = Int32.Parse(Console.ReadLine());
-                    if (num == 0)
+                    int num232 = Int32.Parse(Console.ReadLine());
+                    if (num232 == 0)
                         Console.WriteLine("Khong");
-                    if (num == 1)
+                    if (num232 == 1)
                         Console.WriteLine("Mot");
-                    if (num == 2)
+                    if (num232 == 2)
                         Console.WriteLine("Hai");
-                    if (num == 3)
+                    if (num232 == 3)
                         Console.WriteLine("Ba");
-                    if (num == 4)
+                    if (num232 == 4)
                         Console.WriteLine("Bon");
-                    if (num == 5)
+                    if (num232 == 5)
                         Console.WriteLine("Nam");
-                    if (num == 6)
+                    if (num232 == 6)
                         Console.WriteLine("Sau");
-                    if (num == 7)
+                    if (num232 == 7)
                         Console.WriteLine("Bay");
-                    if (num == 8)
+                    if (num232 == 8)
                         Console.WriteLine("Tam");
-                    if (num == 9)
+                    if (num232 == 9)
                         Console.WriteLine("Chin");
-                    if (num > 9)
+                    if (num232 > 9)
                         Console.WriteLine("Nhap so trong khoang 0-9");
                     #endregion
                     goto Ifinity_Loop;
@@ -72,12 +72,12 @@ namespace BaiTapSo1
                     Console.Clear();
                     #region
                     Console.Write("Nhap canh 1: ");
-                    Double canh1 = Double.Parse(Console.ReadLine());
+                    Double canha232 = Double.Parse(Console.ReadLine());
                     Console.Write("Nhap canh 2: ");
-                    Double canh2 = Double.Parse(Console.ReadLine());
+                    Double canhb232 = Double.Parse(Console.ReadLine());
                     Console.Write("Nhap canh 3: ");
-                    Double canh3 = Double.Parse(Console.ReadLine());
-                    if (canh1 + canh2 > canh3 && canh1 + canh3 > canh2 && canh2 + canh3 > canh1)
+                    Double canhc232 = Double.Parse(Console.ReadLine());
+                    if (canha232 + canhb232 > canhc232 && canha232 + canhc232 > canhb232 && canhb232 + canhc232 > canha232)
                         Console.WriteLine("3 canh tam giac");
                     else
                         Console.WriteLine("Khong phai 3 canh tam giac");
@@ -88,12 +88,14 @@ namespace BaiTapSo1
                     Console.Clear();
                     #region
                     Console.Write("Nhap canh 1: ");
-                    Double canhA = Double.Parse(Console.ReadLine());
+                    Double canhA232 = Double.Parse(Console.ReadLine());
                     Console.Write("Nhap canh 2: ");
-                    Double canhB = Double.Parse(Console.ReadLine());
+                    Double canhB232 = Double.Parse(Console.ReadLine());
                     Console.Write("Nhap canh 3: ");
-                    Double canhC = Double.Parse(Console.ReadLine());
-                    if (Math.Pow(canhA, 2) + Math.Pow(canhB, 2) == Math.Pow(canhC, 2))
+                    Double canhC232 = Double.Parse(Console.ReadLine());
+                    if (Math.Pow(canhA232, 2) + Math.Pow(canhB232, 2) == Math.Pow(canhC232, 2) ||
+                        Math.Pow(canhB232, 2) + Math.Pow(canhC232, 2) == Math.Pow(canhA232, 2) ||
+                        Math.Pow(canhA232, 2) + Math.Pow(canhC232, 2) == Math.Pow(canhB232, 2))
                         Console.WriteLine("3 canh tam giac vuong");
                     else
                         Console.WriteLine("Khong phai 3 canh tam giac vuong");
