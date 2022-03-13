@@ -29,7 +29,11 @@ namespace BaiTapSo1
                         Console.WriteLine("Du lieu nhap sai");
                     else
                     {
-                        if (so232 >= 0)
+                        if( so232 == 0)
+                        {
+                            Console.WriteLine("Khong phai so am hoac so duong");
+                        }
+                        else if (so232 > 0)
                             Console.WriteLine("So {0} la so duong", so232);
                         else
                             Console.WriteLine("So {0} la so am", so232);
@@ -95,6 +99,7 @@ namespace BaiTapSo1
                     Double canhB232 = Double.Parse(Console.ReadLine());
                     Console.Write("Nhap canh 3: ");
                     Double canhC232 = Double.Parse(Console.ReadLine());
+
                     if (Math.Pow(canhA232, 2) + Math.Pow(canhB232, 2) == Math.Pow(canhC232, 2) ||
                         Math.Pow(canhB232, 2) + Math.Pow(canhC232, 2) == Math.Pow(canhA232, 2) ||
                         Math.Pow(canhA232, 2) + Math.Pow(canhC232, 2) == Math.Pow(canhB232, 2))
@@ -111,7 +116,6 @@ namespace BaiTapSo1
                     break;
 
             }
-
        
         }
     }
