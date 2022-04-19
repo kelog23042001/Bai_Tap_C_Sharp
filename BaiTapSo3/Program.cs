@@ -248,6 +248,80 @@ namespace BaiTapSo3
             kiemtratong(a, n);
             coprime(a, n);
         }
+        int countChia(int[] a)
+        {
+            int donvi = 0, dem = 0;
+
+            for (int i = 0; i < a.Length; i++)
+            {
+                donvi = a[i] % 10;
+                if (donvi == 6 && a[i] % 4 == 0)
+                    dem++;
+            }
+            return dem;
+        }
+        void thayThe(int[] a)
+        {
+            for (int i = 0; i < a.Length; i++)
+            {
+                if (a[i] % 2 != 0)
+                    a[i] *= 2;
+            }
+            Console.WriteLine("Nhan doi phan tu le: ");
+            xuatmang(a, a.Length);
+        }
+        void Bai63()
+        {
+            Console.Write("Nhap so phan tu mang: ");
+            int n = Int32.Parse(Console.ReadLine());
+            int[] a = new int[n];
+            a = random(n, -100, 100);
+            xuatmang(a, a.Length);
+            Console.WriteLine("Co {0} phan tu chia het cho 4, tan cung 6", countChia(a));
+            thayThe(a);
+        }
+        void NhapMang(int n, int[] a)
+        {
+            for(int i = 0; i < n; i++)
+            {
+                Console.Write("a[{0}] = ", i);
+                a[i] = Int32.Parse(Console.ReadLine());
+            }
+        }
+        bool isPowerOfTwo(int n)
+        {
+            if (0 == n || 1 == n) return true;
+            int x = n / 2;
+            int y = n % 2;
+            if (1 == y) return false;
+            return isPowerOfTwo(x);
+        }
+        int countPowerOfTwo(int[] a)
+        {
+            int count = 0;
+            for (int i = 0; i < a.Length; i++)
+            {                         
+                    if (isPowerOfTwo(a[i]) && a[i] == a[i++])
+                    {
+                        count++;
+                    }                                    
+            }
+            return count;
+        }
+
+        void Bai64()
+        {
+            Console.Write("Nhap so phan tu mang: ");
+            int n = Int32.Parse(Console.ReadLine());
+            int[] a = new int[n];
+            NhapMang(n, a);
+            xuatmang(a, n);
+            Console.WriteLine("Co {0} so la luy thua cua 2", countPowerOfTwo(a));
+            int k = nhap_K(n);
+            Console.WriteLine("Mang sau khi xoa : ");
+            xoa_k(a, k);
+            xuatmang(a, n-1);
+        }
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -286,11 +360,19 @@ namespace BaiTapSo3
                         Console.Clear();
                         pr.Bai62();
                         break;
+                    case 6:
+                        Console.Clear();
+                        pr.Bai63();
+                        break;
+                    case 7:
+                        Console.Clear();
+                        pr.Bai64();
+                        break;
                     default:
                         Console.WriteLine("Thoat chuong trinh");
                         break;
                 }
-            } while (chonbai >= 1 && chonbai <= 5);
+            } while (chonbai >= 1 && chonbai <= 7);
         }
     }
 }
