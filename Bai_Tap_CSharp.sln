@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiTapSo2", "BaiTapSo2\BaiT
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiTapSo3", "BaiTapSo3\BaiTapSo3.csproj", "{EF599DC4-31E3-426C-83EC-31582BB46746}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTapSo4_Struct_Enum_Foreach", "BaiTapSo4_Struct_Enum_Foreach\BaiTapSo4_Struct_Enum_Foreach.csproj", "{5086D029-332B-41FB-B401-3109E5207AEB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiTapSo4_Struct_Enum_Foreach", "BaiTapSo4_Struct_Enum_Foreach\BaiTapSo4_Struct_Enum_Foreach.csproj", "{5086D029-332B-41FB-B401-3109E5207AEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HDT_BaiTapSo1_TinhDaHinh", "HDT_BaiTapSo1_TinhDaHinh\HDT_BaiTapSo1_TinhDaHinh.csproj", "{15A094F8-B70A-4B7D-AC96-EEF7F5F94EE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HDT_BaiTapSo1_TinhDaHinh", "HDT_BaiTapSo1_TinhDaHinh\HDT_BaiTapSo1_TinhDaHinh.csproj", "{15A094F8-B70A-4B7D-AC96-EEF7F5F94EE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiKiemTraSo1", "BaiKiemTraSo1\BaiKiemTraSo1.csproj", "{B89DFFEE-75D4-4E6B-935A-D68B6A43E469}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{15A094F8-B70A-4B7D-AC96-EEF7F5F94EE2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15A094F8-B70A-4B7D-AC96-EEF7F5F94EE2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15A094F8-B70A-4B7D-AC96-EEF7F5F94EE2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B89DFFEE-75D4-4E6B-935A-D68B6A43E469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B89DFFEE-75D4-4E6B-935A-D68B6A43E469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B89DFFEE-75D4-4E6B-935A-D68B6A43E469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B89DFFEE-75D4-4E6B-935A-D68B6A43E469}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
