@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiTapSo4_Struct_Enum_Forea
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HDT_BaiTapSo1_TinhDaHinh", "HDT_BaiTapSo1_TinhDaHinh\HDT_BaiTapSo1_TinhDaHinh.csproj", "{15A094F8-B70A-4B7D-AC96-EEF7F5F94EE2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiKiemTraSo1", "BaiKiemTraSo1\BaiKiemTraSo1.csproj", "{B89DFFEE-75D4-4E6B-935A-D68B6A43E469}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaiKiemTraSo1", "BaiKiemTraSo1\BaiKiemTraSo1.csproj", "{B89DFFEE-75D4-4E6B-935A-D68B6A43E469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaiTapDiemDanhSo2", "BaiTapDiemDanhSo2\BaiTapDiemDanhSo2.csproj", "{65CFDE6B-FD0E-42DB-8244-A3B8205DADBA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B89DFFEE-75D4-4E6B-935A-D68B6A43E469}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B89DFFEE-75D4-4E6B-935A-D68B6A43E469}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B89DFFEE-75D4-4E6B-935A-D68B6A43E469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65CFDE6B-FD0E-42DB-8244-A3B8205DADBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65CFDE6B-FD0E-42DB-8244-A3B8205DADBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65CFDE6B-FD0E-42DB-8244-A3B8205DADBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65CFDE6B-FD0E-42DB-8244-A3B8205DADBA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
