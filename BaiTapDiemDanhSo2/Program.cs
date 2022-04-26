@@ -8,16 +8,16 @@ namespace BaiTapDiemDanhSo2
 
         static void Main(string[] args)
         {
-            double a, b, c;
+            double a_232, b_232, c_232;
             Console.Write("Nhap a = ");
-            a = Double.Parse(Console.ReadLine());
+            a_232 = Double.Parse(Console.ReadLine());
             Console.Write("Nhap b = ");
-            b = Double.Parse(Console.ReadLine());
+            b_232 = Double.Parse(Console.ReadLine());
             Console.Write("Nhap c = ");
-            c = Double.Parse(Console.ReadLine());
-            Console.WriteLine("Phuong trinh co dang {0}x^2 + {1}x + {2}", a, b, c);
+            c_232 = Double.Parse(Console.ReadLine());
+            Console.WriteLine("Phuong trinh co dang {0}x^2 + {1}x + {2}", a_232, b_232, c_232);
             PTBac2 pt = new PTBac2();
-            PTBac2.ptb2(a, b, c);
+            PTBac2.ptb2(a_232, b_232, c_232);
 
         }
     }
